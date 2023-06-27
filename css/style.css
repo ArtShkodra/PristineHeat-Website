@@ -1,203 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.8;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-weight: 900 !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900 !important;
 }
 
 a {
-    text-decoration: none;
-    transition: all 0.4s ease;
-    font-weight: 800;
-    color: #20212c;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight: 800;
+  color: #20212c;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    z-index: 2;
-    position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: 2;
+  position: relative;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(17, 7, 254, 0.7), rgba(0, 224, 254, 0.7));
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
+  z-index: -1;
 }
 
-
-
-
 .overlays {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    z-index: 2;
-    background: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  z-index: 2;
+  background: white;
 }
 
 .bg-cover {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2d16b;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2d16b;
 }
 
 .btn {
-    padding: 14px 22px;
-    transition: all 0.3s ease;
+  padding: 14px 22px;
+  transition: all 0.3s ease;
 }
 
 .btn-main {
-    background: linear-gradient(to right,#00e0fe, #1107fe);
-    border-radius: 100px;
-    border: none;
-    font-weight: 600;
-    color: #fff;
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
+  border-radius: 100px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
 }
 
 .btn:hover {
-    color: #fff;
-    transform: translateY(-5px);
+  color: #fff;
+  transform: translateY(-5px);
 }
 
 .video-btn {
-    width: 60px;
-    height:60px;
-    background: linear-gradient(to right,#00e0fe, #1107fe);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-    border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 100px;
 }
 
 .video-btn i {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .navbar {
-    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    background: -webkit-linear-gradient(#00e0fe, #1107fe);
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .section-intro {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .section-intro .divider {
-    height: 4px;
-    width: 70px;
-    background: linear-gradient(to right,#00e0fe, #1107fe);
-    margin: 16px auto;
+  height: 4px;
+  width: 70px;
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
+  margin: 16px auto;
 }
 
 .service .service-img {
-    position: relative;
+  position: relative;
 }
 
 .service .service-img .icon {
-    width: 90px;
-    height: 90px;
-    background: linear-gradient(to right,#00e0fe, #1107fe);
-    color: #fff;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: -45px;
-    left: 50%;
-    transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
+  color: #fff;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .service .service-img .icon i {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .feature i {
-    background: -webkit-linear-gradient(#00e0fe, #1107fe);
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 54px;
 }
 
-
 .review {
-    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
 }
 .review .person {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,0.07);
-    padding-bottom: 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 18px;
 }
 
 .review .person img {
-    width: 75px;
-    height: 75px;
-    border-radius: 100px;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
 }
 
 .review .stars {
-    color: orange;
+  color: orange;
 }
 
 form .form-control {
-    border-radius: 0;
-    background: transparent;
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 form .form-control:focus {
-    color: #fff;
-    background: transparent;
-    border-color: #fff;
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
 }
 
 form input.form-control {
-    height: 54px;
+  height: 54px;
 }
 
 form .form-control::placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 footer {
-    background: linear-gradient(to right,#00e0fe, #1107fe);
-    color: #fff;
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 255, 0, 0.7));
+  color: #fff;
 }
 
 footer a {
-    color: #fff;
+  color: #fff;
 }
 
 /* ----------------------------------------------------------------- */
@@ -217,15 +219,15 @@ footer a {
     color: #fff;
     overflow: none;
   } */
-  
-  /* .nav {
+
+/* .nav {
     position: fixed;
     width: 100%;
     height: 100px;
     top: 10px;
   } */
-  
-  /* .logo,
+
+/* .logo,
   .menu,
   .search,
   .bag {
@@ -246,8 +248,8 @@ footer a {
     line-height: 1.2;
     font-size: 20px;
   } */
-  
-  /* .search,
+
+/* .search,
   .bag {
     background: #fff;
     color: black;
@@ -257,156 +259,156 @@ footer a {
     text-align: center;
     margin-top: 18px;
   } */
-  
-  /* .search {
+
+/* .search {
     right: 140px;
   }
   
   .bag {
     right: 40px;
   } */
-  
-  .product-img {
-    width: 900px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    z-index: 2;
-  }
-  
-  .product-text {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #f2d16b;
-  }
-  
-  .main-title {
-    color: white;
-    font-weight: 900;
-    letter-spacing: -10px;
-    font-size: 280px;
-  }
-  
-  .product-desc {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: -585px;
-    z-index: 2;
-    size: 15px;
-    font-size: 20px;
-    font-weight: 900;
-    color: red;
-  }
-  
-  .product-desc p {
-    position: absolute;
-    font-size: 20px;
-    top: -500px;
-    letter-spacing: 20px;
-    text-transform: uppercase;
-  }
-  
-  .product-desc button {
-    margin-top: 10px;
-    background: #f2d16b;
-    color: black;
-    font-weight: bold;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 10px;
-    border: none;
-    border-radius: 30px;
-  }
-  
-  .size {
-    position: absolute;
-    left: 50px;
-    bottom: 40px;
-  }
-  
-  .size ul {
-    list-style: none;
-  }
-  
-  .size ul li {
-    display: inline-block;
-    font-weight: 500;
-    border: 1px solid #fff;
-    padding: 5px;
-    border-radius: 50%;
-    margin-left: 10px;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    line-height: 1.5;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .size span {
-    font-weight: 500;
-  }
-  
-  .size span::after {
-    display: inline-block;
-    content: '';
-    border: 0.5px solid #fff;
-    opacity: 0.5;
-    width: 50px;
-    margin: 0 0 0 10px;
-    transform: translateY(-4px);
-  }
-  
-  .bottom-img {
-    position: absolute;
-    bottom: 80px;
-    right: 20px;
-    background: url('white-shoe.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 220px;
-    height: 150px;
-  }
-  
-  .bottom-right {
-    position: absolute;
-    bottom: 0;
-    left: 86.5%;
-  }
-  
-  .bottom-right ul {
-    list-style: none;
-  }
-  
-  .bottom-right ul li {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 20px 20px 20px 0;
-    background: #624652;
-  }
-  
-  .media ul {
-    list-style: none;
-    position: absolute;
-    left: 45px;
-    top: 35%;
-  }
-  
-  .media ul li {
-    font-size: 18px;
-    margin: 24px 0;
-  }
-  .media ul li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  /* .overlay {
+
+.product-img {
+  width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 2;
+}
+
+.product-text {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f2d16b;
+}
+
+.main-title {
+  color: white;
+  font-weight: 900;
+  letter-spacing: -10px;
+  font-size: 280px;
+}
+
+.product-desc {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -585px;
+  z-index: 2;
+  size: 15px;
+  font-size: 20px;
+  font-weight: 900;
+  color: red;
+}
+
+.product-desc p {
+  position: absolute;
+  font-size: 20px;
+  top: -500px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+.product-desc button {
+  margin-top: 10px;
+  background: #f2d16b;
+  color: black;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+  border: none;
+  border-radius: 30px;
+}
+
+.size {
+  position: absolute;
+  left: 50px;
+  bottom: 40px;
+}
+
+.size ul {
+  list-style: none;
+}
+
+.size ul li {
+  display: inline-block;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 1.5;
+  transition: 0.3s ease-in-out;
+}
+
+.size span {
+  font-weight: 500;
+}
+
+.size span::after {
+  display: inline-block;
+  content: '';
+  border: 0.5px solid #fff;
+  opacity: 0.5;
+  width: 50px;
+  margin: 0 0 0 10px;
+  transform: translateY(-4px);
+}
+
+.bottom-img {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  background: url('white-shoe.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 220px;
+  height: 150px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  left: 86.5%;
+}
+
+.bottom-right ul {
+  list-style: none;
+}
+
+.bottom-right ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 20px 20px 20px 0;
+  background: #624652;
+}
+
+.media ul {
+  list-style: none;
+  position: absolute;
+  left: 45px;
+  top: 35%;
+}
+
+.media ul li {
+  font-size: 18px;
+  margin: 24px 0;
+}
+.media ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -414,54 +416,42 @@ footer a {
     z-index: 2;
     background: #fff;
   } */
-  
-  .first {
-    top: 0;
-  }
-  
-  .second {
-    top: 33.3%;
-  }
-  
-  .third {
-    top: 66.6%;
-  }
-  
-  /*------------------------------------------------------------------------------------*/
-  
 
+.first {
+  top: 0;
+}
+
+.second {
+  top: 33.3%;
+}
+
+.third {
+  top: 66.6%;
+}
+
+/*------------------------------------------------------------------------------------*/
 
 #myVideo {
-    background: cover   ;
-    width: 4000px;
-    object-fit: cover;
-    top: 0;
+  background: cover;
+  width: 4000px;
+  object-fit: cover;
+  top: 0;
 
-    left: 0;
-    width: 100%;
+  left: 0;
+  width: 100%;
 }
 
 .full-width-section {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  .full-width-video {
-    width: 100%;
-  }
-    
-  
+  padding-left: 0;
+  padding-right: 0;
+}
 
-
-
-
-
+.full-width-video {
+  width: 100%;
+}
 
 /* 
   ------------------------------------------------------------------------------ */
-
-
- 
 
 /* body {
     font-family: "Poppins", sans-serif;
@@ -470,210 +460,228 @@ footer a {
 
 a,
 a:hover {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .section-products {
-    padding: 80px 0 54px;
+  padding: 80px 0 54px;
 }
 
 .section-products .header {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .section-products .header h3 {
-    font-size: 1rem;
-    color: #fe302f;
-    font-weight: 500;
+  font-size: 1rem;
+  color: #fe302f;
+  font-weight: 500;
 }
 
 .section-products .header h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #444444; 
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
 }
 
 .section-products .single-product {
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 
 .section-products .single-product .part-1 {
-    position: relative;
-    height: 290px;
-    max-height: 290px;
-    margin-bottom: 20px;
-    overflow: hidden;
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .section-products .single-product .part-1::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		transition: all 0.3s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
 }
 
 .section-products .single-product:hover .part-1::before {
-		transform: scale(1.2,1.2) rotate(5deg);
+  transform: scale(1.2, 1.2) rotate(5deg);
 }
 
 .section-products #product-1 .part-1::before {
-    background: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d762c5e2-ae49-4208-99df-484594b51e5f/air-force-1-07-shoe-Pbt0tj.png") no-repeat center;
-    background-color: #f2d16b;
-    background-size: cover;
-		transition: all 0.3s;
-        
+  background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d762c5e2-ae49-4208-99df-484594b51e5f/air-force-1-07-shoe-Pbt0tj.png')
+    no-repeat center;
+  background-color: #f2d16b;
+  background-size: cover;
+  transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
-    background: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/dunk-low-retro-shoe-dSsNxQ.png") no-repeat center;
-    background-size: cover;
-    background-color: #f2d16b;
+  background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/dunk-low-retro-shoe-dSsNxQ.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: #f2d16b;
 }
 
 .section-products #product-3 .part-1::before {
-    background: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/28812013-b5f3-4148-a1b4-170227e0e0fe/air-jordan-1-low-shoes-2mLM4c.png") no-repeat center;
-    background-size: cover;
-    background-color: #f2d16b;
+  background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/28812013-b5f3-4148-a1b4-170227e0e0fe/air-jordan-1-low-shoes-2mLM4c.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: #f2d16b;
 }
 
 .section-products #product-4 .part-1::before {
-    background: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4b5264a2-7885-44b6-8e5d-7074e28289bf/air-jordan-1-mid-shoes-83Lm6R.png") no-repeat center;
-    background-size: cover;
-    background-color: #f2d16b;
+  background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4b5264a2-7885-44b6-8e5d-7074e28289bf/air-jordan-1-mid-shoes-83Lm6R.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: #f2d16b;
 }
 
 .section-products #product-5 .part-1::before {
-    background: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/s6dp2gck3oukxj9csz5y/air-max-270-shoes-Kqzbp7.png") no-repeat center;
-    background-color: #f2d16b;
-    background-size: cover;
-		transition: all 0.3s;
-        
+  background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/s6dp2gck3oukxj9csz5y/air-max-270-shoes-Kqzbp7.png')
+    no-repeat center;
+  background-color: #f2d16b;
+  background-size: cover;
+  transition: all 0.3s;
 }
 
 .section-products #product-6 .part-1::before {
-    background: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/801e560f-d480-4941-85c5-ac21b57288b2/air-jordan-legacy-312-low-shoes-KQ6zZH.png") no-repeat center;
-    background-size: cover;
-    background-color: #f2d16b;
+  background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/801e560f-d480-4941-85c5-ac21b57288b2/air-jordan-legacy-312-low-shoes-KQ6zZH.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: #f2d16b;
 }
 
 .section-products #product-7 .part-1::before {
-    background: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7eac7cdc-cc97-4a91-8fa3-80669e618545/air-jordan-5-retro-green-bean-shoes-XXS6Wd.png") no-repeat center;
-    background-size: cover;
-    background-color: #f2d16b;
+  background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7eac7cdc-cc97-4a91-8fa3-80669e618545/air-jordan-5-retro-green-bean-shoes-XXS6Wd.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: #f2d16b;
 }
 
 .section-products #product-8 .part-1::before {
-    background: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9c3a7b17-13f3-48da-a681-ff500b46cf6e/air-jordan-5-dj-khaled-shoes-6bZCX4.png") no-repeat center;
-    background-size: cover;
-    background-color: #f2d16b;
+  background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9c3a7b17-13f3-48da-a681-ff500b46cf6e/air-jordan-5-dj-khaled-shoes-6bZCX4.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: #f2d16b;
 }
 .section-products #product-9 .part-1::before {
-    background: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a576a457-055e-40ff-911d-f148529e97e2/air-jordan-low-se-shoes-791mvb.png") no-repeat center;
-    background-size: cover;
-    background-color: #f2d16b;
+  background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a576a457-055e-40ff-911d-f148529e97e2/air-jordan-low-se-shoes-791mvb.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: #f2d16b;
 }
 
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    color: #ffffff;
-    background-color: #fe302f;
-    padding: 2px 8px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
 .section-products .single-product .part-1 .new {
-    left: 0;
-    background-color: #444444;
+  left: 0;
+  background-color: #444444;
 }
 
 .section-products .single-product .part-1 ul {
-    position: absolute;
-    bottom: -41px;
-    left: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    opacity: 0;
-    transition: bottom 0.5s, opacity 0.5s;
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
 }
 
 .section-products .single-product:hover .part-1 ul {
-    bottom: 30px;
-    opacity: 1;
+  bottom: 30px;
+  opacity: 1;
 }
 
 .section-products .single-product .part-1 ul li {
-    display: inline-block;
-    margin-right: 4px;
+  display: inline-block;
+  margin-right: 4px;
 }
 
 .section-products .single-product .part-1 ul li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #ffffff;
-    color: #444444;
-    text-align: center;
-    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
-    transition: color 0.2s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+  transition: color 0.2s;
 }
 
 .product-title {
-    color: #f2d16b;
-    font-weight: 900;
-    /* letter-spacing: -10px; */
-    font-size: 280px;
-  }
+  color: #f2d16b;
+  font-weight: 900;
+  /* letter-spacing: -10px; */
+  font-size: 280px;
+}
 
 .section-products .single-product .part-1 ul li a:hover {
-    color: #fe302f;
+  color: #fe302f;
 }
 
 .section-products .single-product .part-2 .product-title {
-    /* font-size: 1rem; */
-    font-size: 25px;
-    
+  /* font-size: 1rem; */
+  font-size: 25px;
 }
 
 .section-products .single-product .part-2 h4 {
-    display: inline-block;
-    font-size: 1rem;
+  display: inline-block;
+  font-size: 1rem;
 }
 
 .section-products .single-product .part-2 .product-old-price {
-    position: relative;
-    padding: 0 7px;
-    margin-right: 2px;
-    opacity: 0.6;
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
 }
 
 .section-products .single-product .part-2 .product-old-price::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #444444;
-    transform: translateY(-50%);
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  transform: translateY(-50%);
 }
-  
-  
-  
-  
 
+/*-------------------------------------------------------------*/
 
+.swiper-container {
+  width: 100%;
+  height: 400px;
+}
 
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-
-
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+}

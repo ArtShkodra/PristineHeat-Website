@@ -84,3 +84,22 @@ TweenMax.from('.product-desc button', 3, {
 })
 
 
+
+/*------------------------------------------------- */
+
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 1500, // Delay between slide transitions in milliseconds
+      disableOnInteraction: false, // Allow navigation buttons to work while autoplaying
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  
+

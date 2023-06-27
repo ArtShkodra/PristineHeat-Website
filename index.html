@@ -23,6 +23,15 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- Add the Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Add the Swiper JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/line-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -104,17 +113,17 @@
         <div class="media text-center">
           <ul>
             <li>
-              <a href="https://www.facebook.com/"
+              <a href="https://www.facebook.com/" target="_blank"
                 ><i class="fa fa-facebook"></i
               ></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/"
+              <a href="https://www.instagram.com/" target="_blank"
                 ><i class="fa fa-instagram"></i
               ></a>
             </li>
             <li>
-              <a href="https://www.twitter.com/"
+              <a href="https://www.twitter.com/" target="_blank"
                 ><i class="fa fa-twitter"></i
               ></a>
             </li>
@@ -128,8 +137,8 @@
         <div class="row justify-content-center text-center">
           <div class="col-md-8 col-lg-6">
             <div class="header">
-              <h3>Featured Product</h3>
-              <h2>Popular Products</h2>
+              <!-- <h3>Featured Product</h3> -->
+              <h2>Our Products</h2>
             </div>
           </div>
         </div>
@@ -155,9 +164,9 @@
                 <!-- <img src="img/pristine1.png" alt="Product Photo"> -->
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Air Force 1</h3>
+                <h4 class="product-old-price">109.99€</h4>
+                <h4 class="product-price">99.99€</h4>
               </div>
             </div>
           </div>
@@ -182,8 +191,8 @@
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Nike Dunk Low Retro</h3>
+                <h4 class="product-price">99.99€</h4>
               </div>
             </div>
           </div>
@@ -207,9 +216,9 @@
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Air Jordan 1 Low</h3>
+                <h4 class="product-old-price">109.99€</h4>
+                <h4 class="product-price">79.99€</h4>
               </div>
             </div>
           </div>
@@ -234,8 +243,8 @@
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Air Jordan 1 Mid</h3>
+                <h4 class="product-price">184.99€</h4>
               </div>
             </div>
           </div>
@@ -259,9 +268,9 @@
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Nike Air Max 270</h3>
+                <h4 class="product-old-price">144.99€</h4>
+                <h4 class="product-price">124.99€</h4>
               </div>
             </div>
           </div>
@@ -286,8 +295,8 @@
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Jordan 23</h3>
+                <h4 class="product-price">349.99€</h4>
               </div>
             </div>
           </div>
@@ -311,9 +320,9 @@
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Air Jordan 5 Retro 'Green Bean'</h3>
+                <h4 class="product-old-price">174.99€</h4>
+                <h4 class="product-price">144.99€</h4>
               </div>
             </div>
           </div>
@@ -338,8 +347,8 @@
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Jordan 4 Special Edition</h3>
+                <h4 class="product-price">239.99€</h4>
               </div>
             </div>
           </div>
@@ -392,39 +401,56 @@
           <div class="col-md-4" data-aos="zoom-in">
             <div class="service">
               <div class="service-img">
-                <img src="img/image_1.jpg" alt="" />
+                <img src="img/service1.jpg" alt="" />
                 <div class="icon"><i class="icon-browser"></i></div>
               </div>
-              <h5 class="mt-5 pt-4">Service Name</h5>
+              <h5 class="mt-5 pt-4">Sneaker Sourcing</h5>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form
+                At PristineHeat, we understand the thrill of hunting down rare
+                and limited-edition sneakers. Our Sneaker Sourcing Service is
+                designed to help you find those elusive kicks you've been
+                searching for. Whether it's a highly coveted collaboration or a
+                hard-to-find release, our dedicated team will go the extra mile
+                to source the sneakers you desire. Sit back, relax, and let us
+                do the work of tracking down your dream pair.
               </p>
             </div>
           </div>
           <div class="col-md-4" data-aos="zoom-in">
             <div class="service">
               <div class="service-img">
-                <img src="img/image_2.jpg" alt="" />
+                <img src="img/service2.jpg" alt="" />
                 <div class="icon"><i class="icon-bargraph"></i></div>
               </div>
-              <h5 class="mt-5 pt-4">Service Name</h5>
+              <h5 class="mt-5 pt-4">Sneaker Authentication</h5>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form
+                Authenticity is of utmost importance when it comes to sneakers.
+                With our Sneaker Authentication Service, you can have complete
+                peace of mind knowing that every pair you purchase from
+                PristineHeat is verified and guaranteed to be genuine. Our team
+                of experts meticulously examines each sneaker, checking for all
+                the telltale signs of authenticity. When you shop with us, you
+                can be confident that you're investing in legitimate,
+                high-quality sneakers.
               </p>
             </div>
           </div>
           <div class="col-md-4" data-aos="zoom-in">
             <div class="service">
               <div class="service-img">
-                <img src="img/image_3.jpg" alt="" />
+                <img src="img/service3.jpg" alt="" />
                 <div class="icon"><i class="icon-camera"></i></div>
               </div>
-              <h5 class="mt-5 pt-4">Service Name</h5>
+              <h5 class="mt-5 pt-4">Sneaker Care and Restoration</h5>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form
+                We understand the love and care you put into your sneaker
+                collection. That's why we offer a Sneaker Care and Restoration
+                service to help you keep your kicks looking fresh and
+                revitalized. Whether your sneakers need a thorough cleaning,
+                minor repairs, or a complete restoration, our skilled
+                professionals will handle your beloved pairs with the utmost
+                care and attention to detail. Trust us to breathe new life into
+                your sneakers and extend their lifespan.
               </p>
             </div>
           </div>
@@ -454,18 +480,47 @@
     <section id="features" class="text-center">
       <div class="container">
         <div class="row">
-          <div class="col-12 section-intro text-center" data-aos="fade-up">
+          <div class="col-12 section-intro text-center" data-aos="slide-up">
+            <h1>What's New?</h1>
             <div class="divider"></div>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered<br />
-              alteration in some form, by injected humour, or randomised words
-              which don't look even slightly
+              At PristineHeat, we've got the scoop on what's poppin' in the
+              sneaker game. We stay on top of the latest drops, collabs, and
+              trends, so you're always in the know. From highly anticipated
+              releases to limited-edition fire, we've got it all. Get ready to
+              flex with the freshest kicks in town. Keep your eyes glued to our
+              site and socials for the newest heat. Don't sleep on what's new at
+              PristineHeat. Stay ahead of the game and step up your sneaker game
+              like a boss.
             </p>
           </div>
         </div>
         <div class="row gx-4 gy-5">
-          <div class="col-md-4 feature" data-aos="fade-up">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/cover1.png" alt="Image 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/cover2.jpg" alt="Image 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/cover3.jpg" alt="Image 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/cover4.jpg" alt="Image 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/cover5.jpg" alt="Image 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/cover6.jpg" alt="Image 3" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- <div class="col-md-4 feature" data-aos="fade-up">
             <div class="icon"><i class="icon-tools"></i></div>
             <h5 class="mt-4 mb-3">Feature Title</h5>
             <p>
@@ -512,20 +567,25 @@
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <!--counters-->
-    <section class="bg-cover" style="background-image: url(img/cover_2.jpg)">
+    <section
+      class="bg-cover"
+      style="
+        background-image: url(https://images.pond5.com/runners-training-trail-running-fast-photo-162293425_iconl_wide_nowm.jpeg);
+      "
+    >
       <div class="overlay"></div>
       <div class="container text-white text-center">
-        <div class="row gy-4" data-aos="fade-up">
+        <div class="row gy-4" data-aos="fade-right">
           <div class="col-md-3">
             <i class="icon-trophy h1"></i>
-            <h1 class="mt-3 mb-2">45,00</h1>
-            <p>Awards Won</p>
+            <h1 class="mt-3 mb-2">3</h1>
+            <p>Annual Shop of the Year</p>
           </div>
           <div class="col-md-3">
             <i class="icon-camera h1"></i>
@@ -534,13 +594,13 @@
           </div>
           <div class="col-md-3">
             <i class="icon-happy h1"></i>
-            <h1 class="mt-3 mb-2">30M+</h1>
+            <h1 class="mt-3 mb-2">15K+</h1>
             <p>Happy Clients</p>
           </div>
           <div class="col-md-3">
             <i class="icon-paintbrush h1"></i>
             <h1 class="mt-3 mb-2">4,005</h1>
-            <p>Themes Designed</p>
+            <p>Sneakers Customised</p>
           </div>
         </div>
       </div>
@@ -550,8 +610,8 @@
     <section id="reviews" class="text-center">
       <div class="container">
         <div class="row">
-          <div class="col-12 section-intro text-center">
-            <h1>Our Testimonials</h1>
+          <div class="col-12 section-intro text-center" data-aos="slide-up">
+            <h1>PristineHeat Reviews</h1>
             <div class="divider"></div>
             <p>
               At PristineHeat, we highly value the reviews and feedback from our
@@ -572,7 +632,7 @@
           </div>
         </div>
         <div class="row g-4 text-start">
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="fade-right">
             <div class="review p-4">
               <div class="person">
                 <img src="img/avatar_1.jpg" alt="" />
@@ -595,7 +655,7 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="fade-right">
             <div class="review p-4">
               <div class="person">
                 <img src="img/avatar_2.jpg" alt="" />
@@ -618,7 +678,7 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="fade-right">
             <div class="review p-4">
               <div class="person">
                 <img src="img/avatar_3.jpg" alt="" />
@@ -641,7 +701,7 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="fade-left">
             <div class="review p-4">
               <div class="person">
                 <img src="img/avatar_2.jpg" alt="" />
@@ -664,7 +724,7 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="fade-left">
             <div class="review p-4">
               <div class="person">
                 <img src="img/avatar_1.jpg" alt="" />
@@ -687,7 +747,7 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="fade-left">
             <div class="review p-4">
               <div class="person">
                 <img src="img/avatar_3.jpg" alt="" />
@@ -717,8 +777,8 @@
     <section id="blog" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-12 section-intro text-center" data-aos="fade-up">
-            <h1>Our Blog Posts</h1>
+          <div class="col-12 section-intro text-center" data-aos="slide-up">
+            <h1>PristineHeat Blog</h1>
             <div class="divider"></div>
             <p>
               Our blog is designed to provide you with valuable insights,
@@ -731,7 +791,7 @@
             </p>
           </div>
         </div>
-        <div class="row text-start">
+        <div class="row text-start" data-aos="slide-right">
           <div class="col-md-4" data-aos="fade-up">
             <img src="img/blog_post1.png" alt="" />
             <div class="mt-4">
@@ -756,7 +816,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="slide-up">
             <img src="img/blog_post2.png" alt="" />
             <div class="mt-4">
               <small>Posted in <a href="#">Web Design</a>, 12 Jun 2023</small>
@@ -780,7 +840,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="slide-left">
             <img src="img/blog_post3.png" alt="" />
             <div class="mt-4">
               <small>Posted in <a href="#">Web Design</a>, 26 Jun 2023</small>
@@ -803,7 +863,7 @@
                 care guide.
               </p>
             </div>
-          </div>
+          </div>t
         </div>
       </div>
     </section>
@@ -821,10 +881,10 @@
             <h1>Get in touch</h1>
             <div class="divider"></div>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered<br />
-              alteration in some form, by injected humour, or randomised words
-              which don't look even slightly
+              At PristineHeat, we're all about staying connected with our fam.
+              Hit us up anytime, and we mean anytime, to chat about sneakers,
+              ask questions, or just shoot the breeze. We're here to keep it
+              real and keep in touch with our awesome customers. Holla at us!
             </p>
           </div>
         </div>
