@@ -32,6 +32,10 @@
     <!-- Add the Swiper JavaScript -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script src="https://pixijs.download/release/pixi.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
+
     <link rel="stylesheet" href="css/line-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -39,6 +43,10 @@
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
     <!--navbar-->
     <nav
       class="navbar fixed-top navbar-expand-lg navbar-light bg-white"
@@ -574,6 +582,7 @@
 
     <!--counters-->
     <section
+      id="counterRipple"
       class="bg-cover"
       style="
         background-image: url(https://images.pond5.com/runners-training-trail-running-fast-photo-162293425_iconl_wide_nowm.jpeg);
@@ -863,7 +872,8 @@
                 care guide.
               </p>
             </div>
-          </div>t
+          </div>
+          t
         </div>
       </div>
     </section>
@@ -961,6 +971,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.js"></script>
 
-    <script></script>
+    <script>
+      
+    </script>
+    
   </body>
 </html>
