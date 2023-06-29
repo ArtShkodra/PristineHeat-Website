@@ -188,3 +188,334 @@ var swiper = new Swiper('.swiper-container', {
 //         };
 
 /*---------------------------------------------------------------------------- */
+
+
+// let preveiwContainer = document.querySelector('.products-preview');
+// let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+// document.querySelectorAll('#products .single-product').forEach(product => {
+//   product.onclick = () => {
+//     preveiwContainer.style.display = 'flex';
+//     let name = product.id.replace('product-', '');
+//     previewBox.forEach(preview => {
+//       let target = preview.getAttribute('data-target');
+//       if (name == target) {
+//         preview.classList.add('active');
+//       }
+//     });
+//   };
+// });
+
+// previewBox.forEach(close => {
+//   close.querySelector('.fa-times').onclick = () => {
+//     close.classList.remove('active');
+//     preveiwContainer.style.display = 'none';
+//   };
+// });
+
+/*---------------------------------------------------------------------------- */
+
+// // Get the expand icons
+// var expandIcons = document.querySelectorAll('.fa-expand');
+
+// // Get the modal element
+// var modal = document.getElementById('product-modal');
+
+// // Get the close button element
+// var closeBtn = document.getElementsByClassName('close')[0];
+
+// // Function to handle expand icon click event
+// function expandIconClick(event) {
+//   // Prevent the default link behavior
+//   event.preventDefault();
+  
+//   // Get the product details
+//   var product = this.closest('.single-product');
+//   var productTitle = product.querySelector('.product-title').textContent;
+//   var productPrice = product.querySelector('.product-price').textContent;
+  
+//   // Set the product details in the modal
+//   document.getElementById('modal-product-title').textContent = productTitle;
+//   document.getElementById('modal-product-price').textContent = productPrice;
+  
+//   // Display the modal
+//   modal.style.display = 'block';
+// }
+
+// // Function to handle close button click event
+// function closeBtnClick() {
+//   // Hide the modal
+//   modal.style.display = 'none';
+// }
+
+// // Attach click event listeners to expand icons
+// for (var i = 0; i < expandIcons.length; i++) {
+//   expandIcons[i].addEventListener('click', expandIconClick);
+// }
+
+// // Attach click event listener to close button
+// closeBtn.addEventListener('click', closeBtnClick);
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     var expandIcons = document.getElementsByClassName("expand-icon");
+//     var modal = document.createElement("div");
+//     modal.classList.add("modal");
+  
+//     for (var i = 0; i < expandIcons.length; i++) {
+//       expandIcons[i].addEventListener("click", function() {
+//         modal.innerHTML = "<div class='modal-content'>" +
+//           "<span class='close'>&times;</span>" +
+//           "<h2>Modal Content</h2>" +
+//           "<p>You can add your modal content here.</p>" +
+//           "</div>";
+//         document.body.appendChild(modal);
+//         modal.style.display = "block";
+//       });
+//     }
+  
+//     document.addEventListener("click", function(event) {
+//       if (event.target.classList.contains("close")) {
+//         modal.style.display = "none";
+//       }
+//     });
+//   });
+  
+//---------------------------------------------------------------------------------------------qiky
+// document.addEventListener("DOMContentLoaded", function() {
+//     var expandIcons = document.getElementsByClassName("expand-icon");
+  
+//     for (var i = 0; i < expandIcons.length; i++) {
+//       expandIcons[i].addEventListener("click", function() {
+//         var modal = document.createElement("div");
+//         modal.classList.add("modal");
+  
+//         var modalContent = document.createElement("div");
+//         modalContent.classList.add("modal-content");
+  
+//         var closeBtn = document.createElement("span");
+//         closeBtn.classList.add("close");
+//         closeBtn.innerHTML = "&times;";
+  
+//         var modalTitle = document.createElement("h2");
+//         modalTitle.textContent = "Modal Content";
+  
+//         var modalText = document.createElement("p");
+//         modalText.textContent = "You can add your modal content here.";
+  
+//         modalContent.appendChild(closeBtn);
+//         modalContent.appendChild(modalTitle);
+//         modalContent.appendChild(modalText);
+  
+//         modal.appendChild(modalContent);
+//         document.body.appendChild(modal);
+//         modal.style.display = "block";
+  
+//         closeBtn.addEventListener("click", function() {
+//           modal.style.display = "none";
+//         });
+//       });
+//     }
+//   });
+  
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     var previews = document.getElementsByClassName("preview");
+  
+//     for (var i = 0; i < previews.length; i++) {
+//       previews[i].addEventListener("click", function() {
+//         var modal = document.createElement("div");
+//         modal.classList.add("modal");
+  
+//         var modalContent = document.createElement("div");
+//         modalContent.classList.add("modal-content");
+  
+//         var closeBtn = document.createElement("span");
+//         closeBtn.classList.add("close");
+//         closeBtn.innerHTML = "&times;";
+  
+//         var previewContent = this.cloneNode(true);
+//         previewContent.classList.remove("preview");
+//         previewContent.style.display = "block";
+  
+//         modalContent.appendChild(closeBtn);
+//         modalContent.appendChild(previewContent);
+  
+//         modal.appendChild(modalContent);
+//         document.body.appendChild(modal);
+//         modal.style.display = "block";
+  
+//         closeBtn.addEventListener("click", function() {
+//           modal.style.display = "none";
+//         });
+//       });
+//     }
+//   });
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     var expandIcons = document.getElementsByClassName("expand-icon");
+  
+//     for (var i = 0; i < expandIcons.length; i++) {
+//       expandIcons[i].addEventListener("click", function() {
+//         var product = this.closest(".single-product");
+//         var productTitle = product.querySelector(".product-title").textContent;
+//         var productOldPrice = product.querySelector(".product-old-price");
+//         var productPrice = product.querySelector(".product-price").textContent;
+  
+//         var modal = document.createElement("div");
+//         modal.classList.add("modal");
+  
+//         var modalContent = document.createElement("div");
+//         modalContent.classList.add("modal-content");
+  
+//         var closeBtn = document.createElement("span");
+//         closeBtn.classList.add("close");
+//         closeBtn.innerHTML = "&times;";
+  
+//         var modalTitle = document.createElement("h2");
+//         modalTitle.textContent = productTitle;
+  
+//         var modalText = document.createElement("p");
+//         modalText.textContent = "Old Price: " + (productOldPrice ? productOldPrice.textContent : "N/A");
+//         modalText.textContent += "\nPrice: " + productPrice;
+  
+//         modalContent.appendChild(closeBtn);
+//         modalContent.appendChild(modalTitle);
+//         modalContent.appendChild(modalText);
+  
+//         modal.appendChild(modalContent);
+//         document.body.appendChild(modal);
+//         modal.style.display = "block";
+  
+//         closeBtn.addEventListener("click", function() {
+//           modal.style.display = "none";
+//         });
+//       });
+//     }
+//   });
+  
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var expandIcons = document.getElementsByClassName("expand-icon");
+
+//   for (var i = 0; i < expandIcons.length; i++) {
+//     expandIcons[i].addEventListener("click", function() {
+//       var product = this.closest(".single-product");
+//       var productTitle = product.querySelector(".product-title").textContent;
+//       var productOldPrice = product.querySelector(".product-old-price");
+//       var productPrice = product.querySelector(".product-price").textContent;
+//       var productImage = product.querySelector("img").src;
+
+//       var modal = document.createElement("div");
+//       modal.classList.add("modal");
+
+//       var modalContent = document.createElement("div");
+//       modalContent.classList.add("modal-content");
+
+//       var closeBtn = document.createElement("span");
+//       closeBtn.classList.add("close");
+//       closeBtn.innerHTML = "&times;";
+
+//       var modalTitle = document.createElement("h2");
+//       modalTitle.textContent = productTitle;
+
+//       var modalImage = document.createElement("img");
+//       modalImage.src = productImage;
+//       modalImage.alt = productTitle;
+//       modalImage.classList.add("product-image");
+
+//       var modalText = document.createElement("p");
+//       modalText.textContent = "Old Price: " + (productOldPrice ? productOldPrice.textContent : "N/A");
+//       modalText.textContent += "\nPrice: " + productPrice;
+
+//       var buyButton = document.createElement("button");
+//       buyButton.textContent = "Buy Now";
+//       buyButton.classList.add("buy-button");
+
+//       modalContent.appendChild(closeBtn);
+//       modalContent.appendChild(modalTitle);
+//       modalContent.appendChild(modalImage);
+//       modalContent.appendChild(modalText);
+//       modalContent.appendChild(buyButton);
+
+//       modal.appendChild(modalContent);
+//       document.body.appendChild(modal);
+//       modal.style.display = "block";
+
+//       closeBtn.addEventListener("click", function() {
+//         modal.style.display = "none";
+//       });
+//     });
+//   }
+// });
+
+
+// $(document).ready(function() {
+//     $('.expand-icon').on('click', function(e) {
+//       e.preventDefault();
+  
+//       // Get the product details
+//       var product = $(this).closest('.single-product');
+//       var productID = product.attr('id');
+//       var productTitle = product.find('.product-title').text();
+//       var productImage = product.find('img').attr('src');
+//       var productDescription = product.find('.product-description').text();
+//       var productPrice = product.find('.product-price').text();
+  
+//       // Set the values in the modal
+//       $('.products-preview .preview .product-title').text(productTitle);
+//       $('.products-preview .preview img').attr('src', productImage);
+//       $('.products-preview .preview .product-description').text(productDescription);
+//       $('.products-preview .preview .price').text(productPrice);
+  
+//       // Show the modal
+//       $('.products-preview').addClass('active');
+//     });
+  
+//     // Close the modal when the close icon is clicked or outside the modal
+//     $('.products-preview .preview, .products-preview .fa-times').on('click', function(e) {
+//       if (e.target === this) {
+//         $('.products-preview').removeClass('active');
+//       }
+//     });
+//   });
+  
+
+
+$(document).ready(function() {
+    $('.expand-icon').on('click', function(e) {
+      e.preventDefault();
+  
+      // Get the product details
+      var product = $(this).closest('.single-product');
+      var productTitle = product.find('.product-title').text();
+      var productImage = product.find('img').attr('src');
+      var productDescription = product.find('.product-description').text();
+      var productPrice = product.find('.product-price').text();
+  
+      // Set the values in the modal
+      $('.products-preview .product-title').text(productTitle);
+      $('.products-preview img').attr('src', productImage);
+      $('.products-preview .product-description').text(productDescription);
+      $('.products-preview .price').text(productPrice);
+  
+      // Show the modal
+      $('.products-preview').addClass('active');
+      $('.products-preview .preview').fadeIn();
+    });
+  
+    // Close the modal when the close icon is clicked or outside the modal
+    $('.products-preview .preview, .products-preview .fa-times').on('click', function(e) {
+      if (e.target === this) {
+        $('.products-preview').removeClass('active');
+        $('.products-preview .preview').fadeOut();
+      }
+    });
+  });
+  
+ 
+
+  
