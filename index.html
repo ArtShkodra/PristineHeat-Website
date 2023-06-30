@@ -396,9 +396,11 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
+    <div id="canvas-container" style="width: 100%; text-align: center"></div>
 
     <!-- Modal -->
     <div class="products-preview">
@@ -520,6 +522,8 @@
           <div class="col-12 section-intro text-center" data-aos="slide-up">
             <h1>What's New?</h1>
             <div class="divider"></div>
+
+            
             <p>
               At PristineHeat, we've got the scoop on what's poppin' in the
               sneaker game. We stay on top of the latest drops, collabs, and
@@ -817,6 +821,7 @@
         <div class="row">
           <div class="col-12 section-intro text-center" data-aos="slide-up">
             <h1>PristineHeat Blog</h1>
+
             <div class="divider"></div>
             <p>
               Our blog is designed to provide you with valuable insights,
@@ -907,6 +912,63 @@
       </div>
     </section>
 
+
+    <script>
+      // Create a PixiJS application
+      const app1 = new PIXI.Application({
+        width: 800,
+        height: 600,
+        backgroundColor: 0xffa500,
+      });
+    
+      // Append the application canvas to the HTML body
+      document.body.appendChild(app1.view);
+    
+      // Load the ball image
+      app1.loader.add('ball', 'pristine1.png').load(setup);
+    
+      function setup() {
+        // Create a ball sprite
+        const ball = new PIXI.Sprite(app1.loader.resources['ball'].texture);
+    
+        // Set the initial position
+        ball.x = app1.renderer.width / 2;
+        ball.y = app1.renderer.height / 2;
+    
+        // Set the anchor point to the center of the ball
+        ball.anchor.set(0.5);
+    
+        // Set the scale of the ball (make it smaller)
+        ball.scale.x = 0.1; // Adjust the scale as needed
+        ball.scale.y = 0.3; // Adjust the scale as needed
+    
+        // Add the ball to the stage
+        app1.stage.addChild(ball);
+    
+        // Set the velocity of the ball
+        const velocity = { x: 2, y: 1 };
+    
+        // Update function called on each frame
+        function update() {
+          // Move the ball
+          ball.x += velocity.x;
+          ball.y += velocity.y;
+    
+          // Reverse the direction if the ball reaches the screen edges
+          if (ball.x > app1.renderer.width || ball.x < 0) {
+            velocity.x *= -1;
+          }
+          if (ball.y > app1.renderer.height || ball.y < 0) {
+            velocity.y *= -1;
+          }
+        }
+    
+        // Start the animation loop
+        app1.ticker.add(update);
+      }
+    </script>
+    
+
     <!--contact-->
     <section
       id="contact"
@@ -966,6 +1028,8 @@
       </div>
     </section>
 
+    
+
     <!--footer-->
     <footer class="py-4">
       <div class="container">
@@ -995,18 +1059,86 @@
 
     <!-- External JavaScript libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.js"></script>
 
-    <script></script>
+    <script>
+      // Set up the variables needed and loads the images to create the effect.
+      // Once the images are loaded the ‘setup’ function will be called.
+      var app = new PIXI.Application(window.innerWidth, window.innerHeight);
+      // document.body.appendChild(app.view);
+      document.getElementById('canvas-container').appendChild(app.view);
+
+      app.stage.interactive = true;
+      var posX, displacementSprite, displacementFilter, bg, vx;
+      var container = new PIXI.Container();
+      app.stage.addChild(container);
+
+      PIXI.loader.add('ripple.png').add('banner.jpg').load(setup);
+
+      // In the ‘setup’ function the displacement sprite is created
+      // that will create the effect and this is added to a displacement filter.
+      // It’s then set to move its anchor point to the centre of the image and positioned on the screen.
+      function setup() {
+        posX = app.renderer.width / 2;
+        displacementSprite = new PIXI.Sprite(
+          PIXI.loader.resources['ripple.png'].texture
+        );
+        displacementFilter = new PIXI.filters.DisplacementFilter(
+          displacementSprite
+        );
+        displacementSprite.anchor.set(0.5);
+        displacementSprite.x = app.renderer.width / 2;
+        displacementSprite.y = app.renderer.height / 2;
+        vx = displacementSprite.x;
+
+        // To finish off the ‘setup’ function, the displacement filter scale is set and the background positioned.
+        // Notice the scale is ‘0’ for the displacement, that’s because it will be set to a height as soon as the mouse moves.
+
+        app.stage.addChild(displacementSprite);
+        container.filters = [displacementFilter];
+        displacementFilter.scale.x = 0;
+        displacementFilter.scale.y = 0;
+        bg = new PIXI.Sprite(PIXI.loader.resources['banner.jpg'].texture);
+        bg.width = app.renderer.width;
+        bg.height = app.renderer.height;
+        container.addChild(bg);
+        app.stage.on('mousemove', onPointerMove).on('touchmove', onPointerMove);
+        loop();
+      }
+
+      // grab the position of the mouse on the x-axis whenever the mouse moves.
+
+      function onPointerMove(eventData) {
+        posX = eventData.data.global.x;
+      }
+
+      // create a function that continually updates the screen. A velocity for the x-axis is worked out using the position of the mouse and the ripple.
+
+      function loop() {
+        requestAnimationFrame(loop);
+        vx += (posX - displacementSprite.x) * 0.045;
+        displacementSprite.x = vx;
+        var disp = Math.floor(posX - displacementSprite.x);
+        if (disp < 0) disp = -disp;
+        var fs = map(disp, 0, 500, 0, 120);
+        disp = map(disp, 0, 500, 0.1, 0.6);
+        displacementSprite.scale.x = disp;
+        displacementFilter.scale.x = fs;
+      }
+
+      // Finally, the map function is declared that maps value ranges to new values.
+
+      map = function (n, start1, stop1, start2, stop2) {
+        var newval =
+          ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+        return newval;
+      };
+    </script>
+
+
   </body>
 </html>
